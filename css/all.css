@@ -12422,6 +12422,12 @@ h3, .h3 {
 }
 
 @media (max-width: 768px) {
+  .productFeature {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
   .subscribe .subscribeContent .input .typeemail {
     width: 100%;
   }
@@ -12468,9 +12474,6 @@ h3, .h3 {
   }
 }
 
-.productFeature {
-  margin: 0 auto;
-}
 @media (max-width: 576px) {
   .productFeature .productContent-xs {
     margin-top: 0;

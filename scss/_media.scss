@@ -54,6 +54,13 @@
     }
 }
 
+
+.productFeature{
+    @include pad{
+        margin: 0 auto;
+    }
+}
+
 .subscribe{
     @include pad{
         .subscribeContent{
@@ -121,8 +128,8 @@
 }
 
 .productFeature{
-    margin: 0 auto;
     @include phone{
+        // margin: 0 auto;
         .productContent-xs{
              margin-top: 0;
         }
