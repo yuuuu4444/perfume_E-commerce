@@ -1,0 +1,312 @@
+body{
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-family: "Roboto";
+}
+
+.container{
+  max-width: 1110px; 
+}
+
+h3{
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+.more{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $more;
+  text-decoration: none;
+}
+
+
+
+.header{
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo{
+    a{
+      display: block;
+      background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/perfume-week6/d%E2%80%99Perfume.png) no-repeat;
+      width: 128px;
+      height: 36px;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  } 
+
+  .navBar{
+    display: flex;
+    li{
+      a{
+        padding: 16px;
+        text-decoration: none;
+        color: $secondary;
+      }
+      .hover{
+        &:hover{
+          background: $primary;
+          color: $text;
+        }
+      }
+
+      i{
+        margin-right: 3px;   
+      }
+    }
+  }
+}
+
+.banner{
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/perfume-week6/index1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .intro{
+    padding-top: 295px;
+    padding-bottom: 295px;
+    h2,p{
+      color: $text;
+    }
+    h2{
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 3.75rem;
+    }
+    p{
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+    .btn{
+      padding: 10px 120px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.productContent{
+  margin: 60px auto;
+  // margin-top: 60px;
+  // margin-bottom: 60px;
+  .row1,.row3{
+    flex-direction: row-reverse;
+  }
+  .row{
+    justify-content: center;
+    .product1,.product2,.product3,.product4{
+      height: 555px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     } 
+    
+    .product3{
+      img{
+        object-position: left;
+      }
+    }
+    .product4{
+      height: 1080px;
+    }        
+    .col-sm-6{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .content{
+        max-width: 370px;
+        padding: 0 10px;
+        h3{
+          font-size: 2rem;
+          line-height: 3rem;
+          font-weight: 700;
+        }
+        .more{
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: $more;
+          text-decoration: none;
+        }
+      } 
+    }
+  }
+  .row4{
+    ol{
+      li{
+        font-size: 1.5rem;
+        font-weight: 500;
+        p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 52px;
+        font-weight: normal;
+        }
+      }      
+    }
+   .btn{
+     max-width: 350px;
+     padding: 18px 51px;
+     border: 2px solid #000;
+     font-size:  1.25rem;
+     font-weight: 500;
+    } 
+  }
+}
+
+.itemSold{
+  background-color: $bgc;
+  padding: 40px 0px;
+  .container{
+    ul.row{
+      .item{
+        height: 540px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      p.price::after{
+        content: "NT$1,580";
+        color: $secondary;
+        text-decoration:  line-through;
+        margin: 8px;
+      }
+      .item3{
+        position: relative;
+        &::after{
+          content: "Sold out";
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(#000,0.3);
+          color: $text;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 10;
+        }
+      }
+    } 
+  }
+}
+
+.productFeature{
+  margin: 60px auto;
+  .row{
+    align-items: center;
+    .productPic{
+      height: 520px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+    }
+    .productContent{
+       p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    } 
+  }  
+}
+
+.subscribe{
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/perfume-week6/index10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 48%;
+  .subscribeContent{
+    padding-top: 312px;
+    padding-bottom: 112px;
+    h3{
+      color: $secondary;
+    }
+    .input{
+      margin-top: 20px;
+      display: flex;
+      .typeemail{
+        width: 219px;
+        height: 60px;
+        font-size: 1rem;
+        border-radius: 4px 0 0 4px;
+        border: 2px solid $primary;
+        outline: none;
+      }
+      .subscribeBtn{
+        a{
+          display: flex;
+          width:  131px;
+          height: 60px;
+          background: $primary;
+          border: 2px solid $primary;
+          border-radius: 0 4px 4px 0;
+          font-size: 1rem;
+          color: $text;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          &:hover{
+            background-color: darken($primary,10%);
+             border: 2px solid darken($primary,10%);
+          }
+        }      
+      }
+    }
+  }
+}
+  
+.footer{
+  background-color: $primary;
+  padding: 20px 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logoCopyright{
+      display: flex;
+      align-items: center;
+      .logo{
+        display: block;
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/perfume-week6/d%E2%80%99Perfumewhite.png) no-repeat;
+        width: 128px;
+        height: 36px;
+        text-indent:101%;
+        overflow:hidden;
+        white-space:nowrap;
+      }
+      .copyright{
+        font-size: 1rem;
+        line-height: 21px;
+        color: $text;
+        margin-left: 20px;
+      }
+    } 
+    .underNavBar{
+      display: flex;
+      a{
+        text-decoration: none;
+        color: $text;
+        font-weight: light;
+        margin: 0 18px;
+      }
+    }
+  }
+}  
+

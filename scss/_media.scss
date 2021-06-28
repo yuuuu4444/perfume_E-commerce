@@ -1,0 +1,131 @@
+.header{
+    @include pc{
+        .navBar-2{
+            display: none;
+                }
+        }
+}
+
+
+.header{
+    @include pad{
+        i{
+            line-height: 0; 
+        }
+        li{
+            display: none;
+            position: relative;
+        }
+        button{
+            background: none;
+            outline: none;  
+            border: none;
+            color: $secondary;
+            font-size: 2.2rem;
+        }
+        .navBar-2{
+            display: block;
+            .cartNum-round{
+                position: absolute;
+                top: 0px;
+                right: 10px;
+                font-size: 0.75rem;
+                width: 16px;
+                height: 13px;
+                line-height: 13px;
+                text-align: center;
+                background: $primary;
+                border-radius: 100%;
+                color: $text;
+            }                 
+        }
+    } 
+} 
+
+.banner{
+    @include pad{
+        .intro{
+            padding-top: 101px;
+            padding-bottom: 135px;
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.subscribe{
+    @include pad{
+        .subscribeContent{
+            .input{
+                .typeemail{
+                    width: 100%;
+                }
+            } 
+        }            
+    }
+ }
+
+.footer{
+    @include pad{
+        .container{
+            .logoCopyright{
+                width: 100%;
+                justify-content: space-between;
+             }
+            .underNavBar{
+                display: none;
+            }  
+         } 
+      }
+ }
+
+
+.productContent{
+    @include phone{
+        margin: 40px auto;
+        .row{
+            .col-sm-6{
+                .content{
+                    max-width: 100%;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+        .row4{
+            .col-sm-6{
+                .content{
+                    margin-bottom: 0px;
+                    li{
+                        p{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .btn{             
+                        max-width: 100%;
+                        width: 100%;
+                    }       
+                } 
+            }   
+        }
+    }
+}
+
+.itemSold{
+    @include phone{
+        padding-bottom: 4px;
+        li{
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.productFeature{
+    margin: 0 auto;
+    @include phone{
+        .productContent-xs{
+             margin-top: 0;
+        }
+    }
+}
+
