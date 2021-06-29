@@ -12,3 +12,11 @@
         }
     }  
 }
+
+.allProduct{
+    @include phone{
+         .allProduct-item{
+            height: 165px;
+        }
+    }  
+}

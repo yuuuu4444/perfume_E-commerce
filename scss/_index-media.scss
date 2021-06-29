@@ -129,6 +129,7 @@
 
 .productFeature{
     @include phone{
+        margin-top: 40px;
         // margin: 0 auto;
         .productContent-xs{
              margin-top: 0;
