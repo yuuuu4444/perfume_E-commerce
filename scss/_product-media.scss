@@ -1,0 +1,14 @@
+.link-bg{
+    @include pad{
+        display: none;
+    }
+}
+
+.allProduct{
+    @include pad{
+        margin-top: 0px ;
+        li{
+        margin-bottom: 30px;
+        }
+    }  
+}

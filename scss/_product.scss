@@ -1,0 +1,81 @@
+.link-bg{
+    background-color: $primary;
+    a{
+        display: block;
+        text-decoration: none;
+        color: $text;
+        padding: 14px 0;    
+        padding-right: 28px;    
+    }
+}
+
+.link-bg{
+    ul{
+        display: flex;
+    }
+}
+
+.allProduct{
+    margin: 32px auto;
+    li{
+        margin-bottom: 58px;
+    }
+    .allProduct-item{
+        height: 255px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        a:hover{
+            opacity: 0.5;
+        }
+        .item2{
+            object-position: bottom;
+        }
+        .item3,.item4,.item10{
+            object-position: 0% 30%;
+        }
+        .item6{
+            object-position: left;
+        }
+        .item8{
+            object-position: center;
+        }
+    }   
+    .allProduct-icon{
+        a:hover{
+            color: #000;
+        }
+     }
+    h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    } 
+    p.price::after{
+        content: "NT$1,580";
+        color: $secondary;
+        text-decoration:  line-through;
+        margin: 8px;
+     }
+}
+
+.allProduct-pages{
+    display: flex;
+    justify-content: center;
+    a{
+        display: block;
+        padding: 0 7.5px;
+        margin: 0 7.5px;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+            text-decoration: underline;
+            color: $primary;
+        }
+    }
+}

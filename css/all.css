@@ -12206,6 +12206,9 @@ h3, .h3 {
 .itemSold .container ul.row .item {
   height: 540px;
 }
+.itemSold .container ul.row .item a:hover {
+  opacity: 0.6;
+}
 .itemSold .container ul.row .item img {
   width: 100%;
   height: 100%;
@@ -12372,6 +12375,95 @@ h3, .h3 {
   margin: 0 18px;
 }
 
+.link-bg {
+  background-color: #916000;
+}
+.link-bg a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 0;
+  padding-right: 28px;
+}
+
+.link-bg ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.allProduct {
+  margin: 32px auto;
+}
+.allProduct li {
+  margin-bottom: 58px;
+}
+.allProduct .allProduct-item {
+  height: 255px;
+}
+.allProduct .allProduct-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.allProduct .allProduct-item a:hover {
+  opacity: 0.5;
+}
+.allProduct .allProduct-item .item2 {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.allProduct .allProduct-item .item3, .allProduct .allProduct-item .item4, .allProduct .allProduct-item .item10 {
+  -o-object-position: 0% 30%;
+     object-position: 0% 30%;
+}
+.allProduct .allProduct-item .item6 {
+  -o-object-position: left;
+     object-position: left;
+}
+.allProduct .allProduct-item .item8 {
+  -o-object-position: center;
+     object-position: center;
+}
+.allProduct .allProduct-icon a:hover {
+  color: #000;
+}
+.allProduct h2, .allProduct .h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.allProduct p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.allProduct p.price::after {
+  content: "NT$1,580";
+  color: #8D8D8D;
+  text-decoration: line-through;
+  margin: 8px;
+}
+
+.allProduct-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.allProduct-pages a {
+  display: block;
+  padding: 0 7.5px;
+  margin: 0 7.5px;
+  text-decoration: none;
+  color: #000;
+}
+.allProduct-pages a:hover {
+  text-decoration: underline;
+  color: #916000;
+}
+
 @media (max-width: 1980px) {
   .header .navBar-2 {
     display: none;
@@ -12477,5 +12569,20 @@ h3, .h3 {
 @media (max-width: 576px) {
   .productFeature .productContent-xs {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .link-bg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .allProduct {
+    margin-top: 0px;
+  }
+  .allProduct li {
+    margin-bottom: 30px;
   }
 }
